@@ -707,8 +707,18 @@ body {
     }
 }
 @media screen and (max-width: 460px) {
+    .discount {
+        order: 2;
+    }
     .account {
         padding: 10px 0;
+        text-align: center;
+        .login {
+            margin-right: 10px;
+        }
+        .registration {
+            margin-right: 15px;
+        }
     }
     .logo {
         padding-bottom: 10px;
