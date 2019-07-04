@@ -1,0 +1,744 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+.content {
+    max-width: 1280px;
+    margin: 0% auto;
+}
+.social_dicsount_login {
+    padding-top: 10px;
+    background: rgba(245, 245, 245, 0.5);
+}
+.social_networks {
+    a {
+        color: #323232;
+        font-size: 13px;
+        margin-right: 20px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:hover {
+            color: #93B474;
+        }
+    }
+}
+.discount {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #337D5A;
+}
+.account {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
+    .login {
+        color: #323232;
+        margin-right: 20px;
+        i {
+            color: #93B474;
+        }
+    }
+    .registration {
+        color: #323232;
+        margin-right: 40px;
+    }
+    a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #93B474;
+    }
+    .leng {
+        i {
+            font-size: 8px;
+            color: #93B474;
+        }
+    }
+}
+.information {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    .logo_text {
+        margin-left: 8px;
+    }
+}
+.phone_nomber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon_app {
+        margin-right: 15px;
+        width: 31px;
+        height: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #fff;
+        background: #337D5A;
+        &:nth-last-of-type(2) {
+            margin-right: 0;
+        }
+    }
+    .phone_nomber_blok {
+        margin-left: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+    }
+}
+.call {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.call_button {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    box-sizing: border-box;
+    margin-right: 65px;
+    button {
+        padding: 10px 22px;
+        background: #337D5A;
+        border: 0;
+        color: #fff;
+        margin-right: 15px;
+    }
+    div {
+        color: #8A8A8A;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+.bag {
+    position: relative;
+    .counter {
+        position: absolute;
+        top: 0;
+        right: -6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 12px;
+        color: #fff;
+        background: #93B474;
+
+    }
+}
+.navigation {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        li {
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: #1A2F3F;
+            display: inline-block;
+            padding: 20px 0;
+            border-bottom: 2px solid #fff;
+            &:hover {
+                border-bottom: 2px solid #93B474;
+                color: #337D5A;
+            }
+        }
+    }
+}
+.videoBlok {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/bg_video.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+    }
+    .videoTitle {
+        text-align: center;
+        padding: 190px 0;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        font-weight: 600;
+        font-size: 25px;    
+        h1 {
+            font-weight: 800;
+            font-size: 62px;
+            margin-bottom: 25px;
+        }
+    }
+    .videoPlay {
+        margin-top: 35px;
+        background: none;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        width: 61px;
+        height: 61px;
+        font-size: 25px;
+        color: #fff;
+        z-index: 2;
+    }
+}
+.section_title {
+    text-align: center;
+    margin-bottom: 60px;
+    h2 {
+        font-weight: 800;
+        font-size: 45px;
+    }
+    div {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+.products {
+    margin-top: 80px;
+}
+.product_cart {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    margin: 25px 0;
+
+    &:hover {
+        border: 1.5px solid #93B474;
+        .hover_product_cart {
+            visibility: visible;
+        }
+    }
+
+    .hover_product_cart {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 25%;
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
+        &:first-child {
+            color: #C4C4C4;
+        }
+        i:nth-child(3) {
+            color: #337D5A;
+        }
+        div {
+            color: #fff;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #93B474;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .stock {
+        width: 82px;
+        height: 31px;
+        position: absolute;
+        left: -2px;
+        top: 20px;
+        background-image: url(../images/stock.png);
+        font-weight: 800;
+        font-size: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .new {
+        width: 82px;
+        height: 31px;
+        position: absolute;
+        left: -2px;
+        top: 20px;
+        background-image: url(../images/new.png);
+        font-weight: 800;
+        font-size: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product_image {
+        text-align: center;
+        background: #FCFCFC;
+        padding: 20px 0;
+    }
+    .product_title {
+        margin: 0 20px;
+        .item_name {
+            font-weight: bold;
+            font-size: 18px;
+            color: #1A2F3F;
+        }
+        .item_articul {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #8A8A8A;
+        }
+        .item_description {
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .item_weight_packaging {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .item_weight {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 15px;
+                color: #8A8A8A;
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 18px;
+                    display: block;
+                    background-image: url(../images/food-scale-tool.svg);
+                    background-repeat: no-repeat;
+                    margin-right: 10px;
+                }
+                .weight {
+                    font-weight: 600;
+                    color: #337D5A;
+                }
+            }
+            .item_packaging {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 15px;
+                color: #8A8A8A;
+                &::before {
+                    content: '';
+                    width: 12px;
+                    height: 17px;
+                    display: block;
+                    background-image: url(../images/packag.svg);
+                    background-repeat: no-repeat;
+                    margin-right: 10px;
+                }
+                .packaging {
+                    font-weight: 600;
+                    color: #337D5A;
+                }
+            }
+        }
+    }
+    .product_cost {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        .item_cost {
+            font-weight: 600;
+            font-size: 20px;
+            color: #337D5A;
+            span {
+                font-size: 15px;
+                color: #1A2F3F;
+            }
+            .last_price {
+                color: #8A8A8A;
+                text-decoration: line-through;
+                font-size: 16px;
+            }
+            
+        }
+        .button_buy {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            padding: 10px 40px;
+            background: #337D5A;
+            border: 1px solid #337D5A;
+        }
+    }
+}
+.go_to_button {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 90px 0;
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 17px 27px;
+        border: 1.5px solid #337D5A;
+        font-weight: bold;
+        font-size: 15px;  
+        color: #337D5A;      
+    }
+}
+.about_production {
+    padding: 90px 0;
+    background: #FBFBFB;
+    .title {
+        font-weight: 800;
+        font-size: 45px;
+        color: #1A2F3F;
+        margin-bottom: 44px;
+    }
+    .text {
+        font-size: 16px;
+        span {
+            color: #337D5A;
+        }
+    }
+    .go_to_button {
+        padding: 50px 0 40px 0;
+    }
+    .videoBlok {
+        background-image: url(../images/stock-photo-aerial-view-of-farming-tractor-plowing-and-spraying-on-field-with-motion-blur-107097.png);
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+.button_arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 18px;
+    background: #337D5A;
+    color: #fff;
+    i {
+        cursor: pointer;
+        padding: 20px 25px;
+        &:first-of-type {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+.about_plants {
+    padding: 70px 0;
+    .item {
+        text-align: center;
+        .title {
+            font-weight: 800;
+            font-size: 72px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            span {
+                font-weight: 900;
+                font-size: 18px;
+                position: relative;
+                top: 15px;
+            }
+        }
+        .text {
+            font-weight: normal;
+            font-size: 18px;    
+        }
+    }
+}
+.video_about_production {
+    background-image: url(../images/stock-photo-man-holding-box-full-of-fresh-picked-walnuts-1148215688.png);
+    .videoTitle {
+        font-weight: 800;
+        font-size: 45px;
+        div:last-of-type {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 24px;
+        }
+    }
+}
+.about_benefits_of_product {
+    margin: 80px 0 100px 0;
+    .cart_1 {
+        background-image: url(../images/pic1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cart_2 {
+        background-image: url(../images/pic2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cart_3 {
+        background-image: url(../images/pic3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .item_cart {
+        position: relative;
+        height: 525px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 40px;
+        color: #fff;
+        z-index: 2;
+        .title {
+            font-weight: 800;
+            font-size: 40px;
+        }
+        .text {
+            display: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        &:hover .text {
+            display: block;
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: rgba(51, 125, 90, 0.95);
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+.eco_products {
+    padding: 220px 0;
+    background-image: url(../images/eko_pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    .section_title {
+        margin-top: 45px;
+        color: #fff;
+        div {
+            font-size: 22px;
+        }
+    }
+}
+.news {
+    padding-top: 85px;
+    background: rgba(249, 249, 249, 0.7);
+    .section_title {
+        position: relative;
+        text-align: left;
+        margin-bottom: 85px;
+        .button_arrow {
+            bottom: 0;
+            right: 0;
+            left: auto;
+        }
+    }
+    .news_cart {
+        background-color: #fff;
+        .wrap {
+            padding: 20px 37px 30px 24px;
+            .data {
+                font-size: 13px;
+                color: #8A8A8A;
+            }
+            .title {
+                margin-top: 15px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .text {
+                margin: 15px 0 20px 0;
+                font-size: 14px;
+            }
+            .read a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #1A2F3F;
+                &:hover {
+                    color: #337D5A;
+                }
+            }
+        }
+    }
+}
+.contacts {
+    padding-top: 100px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    .section_title {
+        text-align: left;
+    }
+    .phone_nomber {
+        justify-content: flex-start;
+        align-items: center;
+        .icon {
+            color: #337D5A;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        .icon_app {
+            margin-right: 0;
+            margin-left: 15px;
+            
+            // &:nth-last-of-type(2) {
+            //     margin-right: 0;
+            // }
+        }
+        .phone_nomber_blok {
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 0;
+            margin-right: 15px;
+        }
+    }
+    .item {
+        display: flex;
+        margin-top: 50px;
+        .icon {
+            margin-right: 15px;
+            color: #337D5A;
+        }
+        .title {
+            font-size: 17px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+    }
+}
+.footer_nav {
+    padding-top: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    .logo {
+        align-items: flex-end;
+        font-weight: 800;
+        font-size: 15px;
+    }
+    .navigation ul {
+        justify-content: space-between;
+        align-items: flex-end;
+        a:hover {
+            border-bottom: 2px solid #fff;
+        }
+    }
+}
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 30px 0 50px 0;
+    span {
+        color: #337D5A;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .contacts img, .news_cart img {
+        width: 100%;
+    }
+    .content {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .phone_nomber {
+        justify-content: flex-end;
+    }
+    .call {
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    header .navigation ul a {
+        text-align: center;
+    }
+    .about_production .title {
+        font-size: 32px;
+    }
+    .about_benefits_of_product .item_cart {
+        padding: 0 10px;
+        .title {
+            font-size: 25px;
+        }
+        .text {
+            font-size: 13px;
+        }
+    }
+    .contacts_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        .section_title {
+            margin-bottom: 0;
+        }
+    }
+    .footer_nav .navigation ul {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 460px) {
+    .account {
+        padding: 10px 0;
+    }
+    .logo {
+        padding-bottom: 10px;
+    }
+    header .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        a {
+            padding: 5px 0;
+        }
+    }
+    .videoBlok .videoTitle h1 {
+        font-size: 32px;
+    }
+    .about_production .videoBlok {
+        height: 290px;
+    }
+    .video_about_production .videoTitle {
+        font-size: 25px;
+        div:last-of-type {
+            font-size: 20px;
+        }
+    }
+    .news .section_title .button_arrow {
+        bottom: -70px;
+    }
+    .footer_wrap {
+        flex-direction: column;
+        div {
+            padding-bottom: 10px;
+        }
+    }
+}
